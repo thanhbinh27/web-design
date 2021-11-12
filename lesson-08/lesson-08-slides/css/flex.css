@@ -1,0 +1,21 @@
+#container {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: flex-start;
+    border: 1px solid red;
+}
+
+
+.main {
+    /* flex-grow: 2;
+    flex-shrink: 1; flex-basis: auto; */
+    flex: 1 1 auto;
+    background-color: green;
+}
+
+.sidebar {
+    flex-grow: 1;
+    flex-shrink: 1; flex-basis: auto;
+    flex: 1 1 auto;
+    background-color: red;
+}

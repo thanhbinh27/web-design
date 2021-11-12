@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+</head>
+<body>
+    <div id="hotProduct">
+        <h2>Sản phẩm mới nhất</h2>
+        <p>Áo sơ mi</p>
+        <p>Quần jean</p>
+    </div>
+
+    <script>
+        let hotProductCollection = document.getElementById("hotProduct");
+        console.log(hotProductCollection);
+
+        let hotProduct = hotProductCollection.innerHTML;
+        console.log(hotProduct);
+
+        /* html element */
+        let title = document.getElementById("hotProduct").firstElementChild;
+        console.log(title.innerHTML);
+
+        /* html element */
+        let hotProductChildNodes = document.getElementById("hotProduct").childNodes;
+        console.log(hotProductChildNodes);
+
+        let titleNode = hotProductChildNodes[1];
+        console.log(titleNode.textContent);
+
+        let tShirtPNode = hotProductChildNodes[3];
+        console.log(tShirtPNode.childNodes[0].nodeValue);
+    </script>
+</body>
+</html>

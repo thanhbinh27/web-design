@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Display, None, Visibility</title>
+    <style>
+        #inline {
+            margin-top: 15px;
+            /*no effect*/
+            margin-bottom: 15px;
+            /*no effect*/
+            margin-left: 15px;
+            /*have effect*/
+            margin-right: 15px;
+            /*have effect*/
+        }
+        
+        #none {
+            display: none;
+        }
+        
+        #visibility {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="block">Block: Hiển thị thành một khối, mỗi khối 1 dòng</div>
+    <div id="none">None: Ẩn phần tử đi, không tồn tại phần tử đó nữa</div>
+    <div id="block">Block: Hiển thị thành một khối, mỗi khối 1 dòng</div>
+    <div id="visibility">Visibility: Ẩn phần tử đi, vẫn tồn tại phần tử đó</div>
+    <span id="inline">Inline: Hiển thị nội tuyến, các phần tử đều nằm trên 1 dòng</span>
+</body>
+
+</html>

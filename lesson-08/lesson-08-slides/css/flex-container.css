@@ -1,0 +1,37 @@
+/* Make parent element a flex container 01 */
+
+ul {
+    /*display: flex or inline-flex*/
+    display: flex;
+    border: 1px solid red;
+}
+
+
+/* Style the list items in flex container 01 */
+
+li {
+    list-style-type: none;
+    width: 100px;
+    height: 100px;
+    background-color: #8cacea;
+    margin: 8px;
+}
+
+
+/* Make parent element a flex container 02 */
+
+#container {
+    /*display: flex or inline-flex*/
+    display: inline-flex;
+    border: 1px solid red;
+}
+
+
+/* Style the list items in flex container 02 */
+
+.items {
+    height: 100px;
+    width: 100px;
+    background-color: #8cacea;
+    margin: 8px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node List</title>
+</head>
+<body>
+    <p>Xin chào VUSers</p>
+    <p>Xin chào FastTrackers</p>
+    <p id="demo"></p>
+
+    <button onclick="colorElement();">Tô màu phần tử</button>
+
+    <script>
+        let myNodeList = document.querySelectorAll("p");
+        document.getElementById("demo").innerHTML = "document này chứa "
+            + myNodeList.length + " đoạn văn bản";
+
+        function colorElement() {
+            let myNodeList = document.querySelectorAll("p");
+            let i;
+            for (i = 0; i < myNodeList.length; i++) {
+                myNodeList[i].style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

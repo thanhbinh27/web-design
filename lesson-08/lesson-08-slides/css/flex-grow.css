@@ -1,0 +1,28 @@
+#container {
+    display: flex;
+    border: 1px solid red;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin: 8px;
+}
+
+.item-1 {
+    background-color: green;
+    flex-grow: 1;
+}
+
+.item-2 {
+    background-color: red;
+    flex-grow: 1;
+    /* flex-grow: 2; */
+}
+
+.item-3 {
+    background-color: purple;
+    flex-grow: 1;
+    /* flex-grow: 3; */
+}

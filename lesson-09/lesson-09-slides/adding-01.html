@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding 01</title>
+    <script src="./js/"></script>
+</head>
+<body>
+    <p id="greeting">Hello VUSers</p>
+    <p id="hi">Hi FastTrackers</p>
+
+    <ul id="menu">
+        <li class="item">Frontend</li>
+        <li class="item">Backend</li>
+        <li class="item">Database</li>
+    </ul>
+
+    <script>
+        /* creating menu item by html collection */
+        let li = document.createElement('li');
+        li.innerHTML = "Fullstack";
+        li.setAttribute("class", "item");
+        console.log(li);
+
+        let menu = document.getElementById('menu');
+        console.log(menu);
+
+        liNodeList = document.getElementById('menu').querySelectorAll("li");
+        console.log(liNodeList);
+
+        menu.appendChild(li);
+        console.log(menu);
+
+         /* creating menu item by node list */
+        let devOpsTextNode = document.createTextNode('DevOps');
+        console.log(devOpsTextNode);
+
+        let li2 = document.createElement('li');
+        li2.innerHTML = devOpsTextNode.nodeValue;
+        li2.setAttribute("class", "item");
+        console.log(li2);
+
+        menu.appendChild(li2);
+        console.log(menu);
+    </script>
+</body>
+</html>

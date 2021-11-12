@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Priority Style Sheets 02</title>
+    <style>
+        #school p {
+            /*Giá trị độ ưu tiên: 100 + 1 = 101 */
+            color: blue;
+        }
+        
+        #school .course p {
+            /*Giá trị độ ưu tiên: 100 + 10 + 1 = 111 */
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="school">
+        <h1>VU School</h1>
+        <h2>Trường dạy nghề Việt Úc</h2>
+        <div class="course">
+            <h2>Fast Track Coding Programming</h2>
+            <p>FullStack Developer</p>
+        </div>
+    </div>
+</body>
+
+</html>

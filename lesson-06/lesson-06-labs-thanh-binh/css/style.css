@@ -1,0 +1,51 @@
+img {
+    width: 483px;
+    height: 300px;
+}
+
+body {
+    background-color: rgb(175, 210, 250); 
+    width: 90%; 
+    margin: auto;
+    color: white;
+}
+
+#mainContainer {
+    background-color: rgb(76, 109, 191); 
+    max-width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#header {
+    text-align: left; 
+    padding-top: 1px;
+}
+
+h2 {
+    margin-top: 35px;
+}
+
+nav {
+    background-color: rgb(175, 210, 250); 
+    margin-top: 50px;
+    padding: 15px;
+}
+
+#content {
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    clear: both
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+footer a {
+    padding-right: 10px;
+}
+

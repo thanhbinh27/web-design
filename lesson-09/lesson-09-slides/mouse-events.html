@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>onmousedown, onmouseup events</title>
+</head>
+
+<body>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: brown; width: 150px; 
+                height: 20px; padding: 40px;">
+        Nhấn tui đi!
+    </div>
+
+    <script>
+        function mDown(obj) {
+            obj.style.backgroundColor = "#1ec5e5";
+            obj.innerHTML = "Xin chào bạn!";
+        }
+
+        function mUp(obj) {
+            obj.style.backgroundColor = "#D94A38";
+            obj.innerHTML = "Cảm ơn bạn!";
+        }
+    </script>
+</body>
+
+</html>

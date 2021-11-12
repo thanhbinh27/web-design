@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Blog</title>
+    <style>
+        #header {
+            background-color: green;
+            text-align: center;
+            padding: 30px;
+            color: white;
+        }
+
+        #menu {
+            padding: 15px 0 15px 30px;
+            background-color: black;
+            color: white;
+        }
+
+        #menu2 {
+            float: right;
+            padding: 0px 30px 0px 0px;
+        }
+
+        #container {
+            background-color: orange;
+            float: right;
+
+            width: 350px;
+
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            color: white;
+            text-align: left;
+            padding: 0px 0px 0px 80px;
+        }
+
+        h3 {
+            color: white;
+            text-align: left;
+            padding: 0px 0px 0px 15px;
+        }
+
+        a {
+            color: white;
+        }
+
+        #img {
+            width: 300px;
+            height: 150x;
+        }
+
+        #img2 {
+
+            width: 1150px;
+            height: 500px;
+        }
+
+        #img3 {
+            width: 100px;
+            height: 50px;
+        }
+
+        #main {
+            background-color: purple;
+            margin-top: -20px;
+        }
+
+        #text {
+            text-align: left;
+            padding: 15px 0 20px 15px;
+            font-size: 15px;
+        }
+
+        #footer {
+            background-color: blue;
+            text-align: center;
+            height: 80px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-color: gray; max-width: 80%; margin: auto">
+
+    <!-- Start Header -->
+    <header id="header">
+
+        <h1>Dev's Blog</h1>
+        <p> Một góc nhỏ để viết lách vài ba câu chuyện lập trình :x </p>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Menu -->
+    <nav id="menu">
+
+        <a>Trang chủ</a> &nbsp; &nbsp;
+        <a>Giới thiệu</a> &nbsp; &nbsp;
+        <a>Frontend</a> &nbsp; &nbsp;
+        <a>Backend</a> &nbsp; &nbsp;
+        <a>Liên lạc</a> &nbsp; &nbsp;
+        <a id="menu2">Đăng nhập</a>
+
+    </nav>
+    <!-- End Menu -->
+
+    <!-- Start Content -->
+    <div id="container">
+        <aside style="text-align: center;">
+            <h3>Về Blog</h3>
+            <img id="img" src="../images/blog.jpg" alt="blog"> <br>
+            <section id="text">
+                <a id="blog">Blog là một website thông tin riêng hoặc nhật ký trực tuyến,
+                    với cách trình bày các bài viết mới nhất được đưa lên đầu. Người viết blog có thể là cá nhân hay một
+                    nhóm nhỏ,
+                    thể hiện cái nhìn chủ quan của họ về một chủ đề nhất định.
+                </a>
+            </section>
+
+            <br>
+            <h3>Bài viết gần đây</h3>
+            <img id="img" src="../images/backfrontend.png" alt="backfrontend">
+            <img id="img" src="../images/mysql.png" alt="mysql">
+            <img id="img" src="../images/fullstack.jpg" alt="fullstack"> <br>
+
+            <section style="text-align: left; padding: 300px 0px 0px 15px;">
+                <a>Theo dõi tại đây!</a> <br> <br>
+                <img id="img3" src="../images/twitter.jpg" alt="twitter.jpg"> <br> <br>
+                <a>Đăng kí và theo dõi để biết thêm thông tin chi tiết!</a>
+            </section>
+
+            <div style="padding-bottom: 70px;"></div>
+        </aside>
+    </div>
+    <main id="main">
+        <section style="text-align: center;">
+            <h2 style="padding: 30px 0 0px 15px;">Lập trình Frontend là gì</h2>
+            <section id="text">
+                <a>Các lập trình viên front-end chịu trách nhiệm cho giao diện của một trang web</a> <br>
+            </section>
+
+            <img id="img2" src="../images/reacjs.jpeg" alt="reacjs">
+            <section id="text">
+                <a>Lập trình front end là...</a> <br> <br>
+                <a>Ngoài việc thông thạo các ngôn ngữ đó, các lập trình viên front-end cần phải làm quen với các
+                    framework như Bootstrap, Foundation, Backbone, AngularJS, và EmberJS, để đảm bảo nội dung luôn hiển
+                    thị tốt trên mọi thiết bị khác nhau, và các thư viện như jQuery và LESS,
+                    đóng gói code vào trong một hình thức giúp tiết kiệm thời gian và hữu dụng hơn.</a> <br>
+            </section>
+        </section>
+
+        <section style="text-align: center;">
+            <h2 style="padding: 10px 0 0px 15px;">Lập trình Backend là gì</h2>
+            <section id="text">
+                <a>Backend thường bao gồm ba phần: máy chủ, ứng dụng và cơ sở dữ liệu.</a> <br>
+            </section>
+            <img id="img2" src="../images/java.jpeg" alt="reacjs">
+        </section>
+
+        <section id="text">
+            <a>Lập trình back end là...</a> <br> <br>
+            <a>Nếu bạn đặt chuyến bay hoặc mua vé buổi hòa nhạc, bạn thường mở một trang web và tương tác với frontend.
+                Khi bạn đã nhập thông tin đó, ứng dụng sẽ lưu nó vào cơ sở dữ liệu được tạo trên máy chủ. Để dễ dàng,
+                chỉ cần nghĩ về cơ sở dữ liệu như một bảng tính Excel khổng lồ trên máy tính của bạn,
+                nhưng máy tính (máy chủ) của bạn nằm ở đâu đó ở Arizona.</a>
+        </section>
+
+        <div style="clear: both"></div>
+    </main>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <div style="clear: both"></div>
+    <footer id="footer">
+        <a> Copyright @ 2020-2021 </a>
+    </footer>
+    <!-- End Footer -->
+</body>
+
+</html>

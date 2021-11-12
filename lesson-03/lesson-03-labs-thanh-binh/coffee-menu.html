@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Coffee Menu</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;         
+        }
+
+        #nametitle {
+            text-align: center;
+        }
+
+        #name2 {
+            text-align: left;
+            background-color: rgb(237, 144, 237);
+        }
+
+        #name3 {
+            text-align: right;
+            background-color: rgb(47, 179, 104);
+        }
+
+        #name4 {
+            text-align: center;
+            background-color: rgb(235, 235, 94);
+        }
+
+        #name5 {
+            text-align: left;
+            background-color: rgb(47, 179, 104);
+        }
+
+        #type1 {
+            text-align: left;
+            background-color: red;
+        }
+
+        #type2 {
+            text-align: right;
+            background-color: blue;
+        }
+
+        #type3 {
+            text-align: center;
+            background-color: orange;
+        }
+
+        #price1 {
+            text-align: justify;
+            background-color: red;
+        }
+
+        #price2 {
+            text-align: justify;
+            background-color: blue;
+        }
+
+        #price3 {
+            text-align: justify;
+            background-color: rgb(221, 177, 94);
+        }
+
+        #price4 {
+            text-align: justify;
+            background-color: rgb(202, 132, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2"><b>Name</b></th>
+            <th><b>Type</b></th>
+            <th><b>Price</b></th>
+        </tr>
+
+        <tr>
+            <td id="nametitle" rowspan="4">Traditional Coffee</td>
+            <td id="name2" rowspan="2">Vietnamese Coffee Phin</td>
+            <td id="type1">Hot</td>
+            <td id="price1">28.000 vnđ</td>                       
+        </tr>
+        
+        <tr>
+            <td id="type2">Cold</td>
+            <td id="price2">30.000 vnđ</td>
+        </tr>
+
+        <tr>
+            <td id="name3" rowspan="2">Vietnamese Coffee with Milk<br>
+               Bac Xiu - Vietnamese Coffee with (much) Milk
+            </td>           
+            <td id="type1">Hot</td>
+            <td id="price1">28.000 vnđ</td>
+        </tr>
+            <td id="type2">Cold</td>
+            <td id="price2">30.000 vnđ</td>
+        <tr>
+        </tr>
+       
+        <tr>
+            <td id="nametitle" rowspan="3">Espresso</td>
+            <td id="name4">Traditional Espresso</td>
+            <td id="type3" rowspan="3">Hot (only)</td>
+            <td id="price3">40.000 vnđ</td>
+        </tr>
+
+        <tr>
+            <td id="name2">Espresso Machiato</td>
+            <td id="price4" rowspan="2">45.000 vnđ</td>       
+        </tr>
+
+        <tr>
+            <td id="name5">Cappuccino</td>       
+        </tr>
+
+    </table>
+</body>
+
+</html>

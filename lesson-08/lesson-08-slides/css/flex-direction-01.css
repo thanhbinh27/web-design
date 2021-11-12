@@ -1,0 +1,15 @@
+ul {
+    display: flex;
+    /* flex-direction: row or column, row-reverse, 
+    column-reverse; */
+    flex-direction: row;
+    border: 1px solid red;
+}
+
+li {
+    list-style-type: none;
+    width: 100px;
+    height: 100px;
+    background-color: #8cacea;
+    margin: 8px;
+}

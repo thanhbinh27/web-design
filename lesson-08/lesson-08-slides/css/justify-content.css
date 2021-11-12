@@ -1,0 +1,15 @@
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    border: 1px solid red;
+    padding-inline-start: 0;
+}
+
+li {
+    list-style-type: none;
+    width: 100px;
+    height: 100px;
+    background-color: #8cacea;
+    margin: 8px;
+}

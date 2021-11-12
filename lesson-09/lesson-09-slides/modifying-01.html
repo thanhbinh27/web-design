@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifying 01</title>
+    <script src="./js/"></script>
+</head>
+<body>
+    <p id="greeting">Hello VUSers</p>
+    <p id="hi">Hi FastTrackers</p>
+
+    <ul id="menu">
+        <li class="item">Frontend</li>
+        <li class="item">Backend</li>
+        <li class="item">Database</li>
+    </ul>
+
+    <input value="Ẩn chữ đi" type="button" onclick="document.getElementById('hello').style.visibility='hidden';">
+    <input value="Hiện chữ lại" type="button" onclick="document.getElementById('hello').style.visibility='visible';">
+    <br><br>
+
+    <script>
+        /* innerHTML */
+        let menuItems = document.getElementsByClassName('item');
+        console.log(menuItems);
+        for (let i = 0; i < menuItems.length; i++) {
+            let item = menuItems.item(i);
+            item.innerHTML = "Hello World";
+            console.log(item);
+        }
+
+        /* element.attribute */
+        let pTag = document.getElementById('greeting');
+        document.write("Before modifying: " + pTag.id + "<br>");
+        pTag.id = "hello";
+        document.write("After modifying: " + pTag.id + "<br><br>");
+
+        /* element.style.property: example 1 */
+        let hiPTag = document.getElementById('hi');
+        hiPTag.style.color = 'red';
+
+        /* output html element content browser: document.write */
+        document.write("Message 1: " + hiPTag.innerHTML + "<br>");
+
+        /* modify html element content: .innnerHTML */
+        hiPTag.innerHTML = "Xin chào các bạn học viên Việt Úc";
+        document.write("Message 2: " + hiPTag.innerHTML + "<br>");
+    </script>
+</body>
+</html>

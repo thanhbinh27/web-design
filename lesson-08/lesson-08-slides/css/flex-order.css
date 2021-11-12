@@ -1,0 +1,36 @@
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border: 1px solid red;
+    padding-inline-start: 0;
+}
+
+li {
+    list-style-type: none;
+    width: 100px;
+    height: 100px;
+    background-color: #8cacea;
+    margin: 8px;
+}
+
+
+/* select first li element within the ul */
+li:nth-child(1) {
+    /*give it a value equal 3*/
+    order: 3;
+}
+
+
+/* select second li element within the ul */
+li:nth-child(2) {
+    /*give it a value equal 2*/
+    order: 2;
+}
+
+
+/* select third li element within the ul */
+li:nth-child(3) {
+    /*give it a value equal 1*/
+    order: 1;
+}
